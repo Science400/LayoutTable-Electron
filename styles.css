@@ -1,0 +1,55 @@
+html, body, .container-fluid {
+  background-color: #D6D8DC;
+}
+
+.text-input {
+  font-size: 16px;
+}
+
+.hash-output {
+  color: #575B5E;
+  font-size: 16px;
+  letter-spacing: 2px;
+  white-space: pre-wrap;
+}
+
+.hash-heading {
+  color: #575B5E;
+  font-weight: normal;
+}
+
+
+/* Navigation Stuff */
+.vertical-nav {
+  min-width: 5rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+#sidebar p {
+  display: block;
+}
+
+/* Toggle Behavior */
+#sidebar.active {
+  width: 5rem;
+}
+
+#content.active {
+  width: calc(100% - 5rem);
+  margin-left: 5rem;
+}
+
+#sidebar p.active {
+  display: none;
+}
