@@ -30,4 +30,5 @@ function connectToPort() {
 
 function toggleSideBar() {
   $('#sidebar, #content').toggleClass('active');
+  $('#sidebar button i').toggleClass('fa-arrow-right fa-arrow-left');
 }

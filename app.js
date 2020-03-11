@@ -8,7 +8,7 @@ let window = null
 app.once('ready', () => {
   // Create a new window
   window = new BrowserWindow({
-    // Set the initial width to 800px
+    // Set the initial width to 1024px
     width: 1024,
     // Set the initial height to 600px
     height: 600,
@@ -25,6 +25,9 @@ app.once('ready', () => {
     protocol: 'file:',
     slashes: true
   }))
+
+  // Load the window on top of the rest of the Raspbian interface.
+  // window.setFullScreen(true);
 
   // Show window when page is ready
   window.once('ready-to-show', () => {
